@@ -97,4 +97,23 @@ open /usr/local/Cellar/nginx
 ## Nginx
 
 [Installing Nginx in Mac OS X Maverick With Homebrew](https://medium.com/@ThomasTan/installing-nginx-in-mac-os-x-maverick-with-homebrew-d8867b7e8a5a)  
-[Installing NGINX on MAC](https://dev.to/arjavdave/installing-nginx-on-mac-46ac)
+[Installing NGINX on MAC](https://dev.to/arjavdave/installing-nginx-on-mac-46ac). 
+
+## Turn off the PM2 and nginx
+
+PM2
+```
+pm2 list'
+pm2 stop appname
+pm2 delete appname
+```
+[PM2关闭守护进程](https://www.geek-share.com/detail/2728036405.html)   
+Nginx:
+
+```
+1001  ps -ef|grep nginx
+sudo kill -QUIT 21813
+sudo nginx -s stop
+```
+[Nginx在MAC上的安装、启动、重启和关闭](cnblogs.com/gujiande/p/10095192.html)   
+[How to stop nginx on Mac OS X](https://newbedev.com/how-to-stop-nginx-on-mac-os-x)   
