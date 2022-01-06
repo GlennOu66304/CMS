@@ -85,13 +85,33 @@ You can simply remove all the html file in the nginx folder, then place the dist
 ```
 brew services start nginx
 open /usr/local/Cellar/nginx
+二、Nginx配置文件路径
+nginx.conf 配置文件位置:
+/usr/local/etc/nginx/nginx.conf
+nginx 安装目录:
+/usr/local/Cellar/nginx
+nginx 网站目录：
+将打包的dist文件夹放到次目录下
+
+/usr/local/var/www
+启动：
+sudo nginx
+重启：
+
+sudo nginx -s reload
+退出：
+sudo nginx -s quit
+
+作者：hope20
+链接：https://www.jianshu.com/p/093bba6ec8ef
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
 ```
-
+[Mac Nginx 部署 vue 项目](https://www.jianshu.com/p/093bba6ec8ef) 
 [【YaconIT】Vue 项目部署到 Nginx 服务器](https://www.bilibili.com/video/BV1R741117ds/)  
 [nginx 上部署前端项目](https://www.cnblogs.com/songmengyao/p/12298754.html)  
 [手把手教 Nginx 部署 Vue 项目](https://juejin.cn/post/6844904096973979662)
-[Mac Nginx 部署 vue 项目](https://www.jianshu.com/p/093bba6ec8ef)  
 [[vue]：vue 前端和 node 后端、通过 nginx 的服务器配置](https://mp.weixin.qq.com/s/Uuv6RLopAmps7y6dg_9v9g)
 
 ## Nginx
